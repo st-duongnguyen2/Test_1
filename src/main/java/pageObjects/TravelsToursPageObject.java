@@ -121,7 +121,7 @@ public class TravelsToursPageObject extends AbstractPage {
         SimpleDateFormat formatter = new SimpleDateFormat("dd");     //format date to dd
         Date date = new Date();                                             //get current day to date variable
         String day = formatter.format(date);                                //convert date with format dd to String
-        int i = Integer.parseInt(day);                                      //convert date String to int
+        int i = Integer.parseInt(day);                                      //convert date String to int change
 
         List<WebElement> listDay = driver.findElements(By.xpath("//table[@class=' table-condensed']//td[@class='day ']"));
         for (WebElement eachDay : listDay) {
